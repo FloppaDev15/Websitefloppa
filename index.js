@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 const fs = require("fs");
-const cdnfolder = "https://github.com/FloppaDev15/Websitefloppa/tree/3d2288477d3933605642172adeef024998045860/cdn";
+const cdnfolder = "C:\\Users\\user\\Documents\\CDN\\cdn";
 // Serve static files from different "CDN" directories
 app.use("/", express.static(path.join(__dirname, "public")))
 app.use('/mp4', express.static(path.join(__dirname, 'cdn/mp4'), {
